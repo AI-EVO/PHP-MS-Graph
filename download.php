@@ -36,9 +36,9 @@ header('Content-Disposition: attachment; filename="'.basename($target_dir.'Captu
 header('Expires: 0');
 header('Cache-Control: must-revalidate');
 header('Pragma: public');
-header('Content-Length: ' . filesize($filepath));
+header('Content-Length: ' . filesize($target_dir.'Capture.JPG'));
 flush(); 
-readfile($filepath);
+readfile($target_dir.'Capture.JPG');
 die();
 
 ?>
